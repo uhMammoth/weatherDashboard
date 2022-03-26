@@ -10,27 +10,27 @@
 </head>
 <body>
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1 class='text-center bg-dark text-light p-3'>Weather Dashboard</h1>
     </header>
-    <main>
-        <section id='search-container'>
-            <div id='search-bar'>
+    <main class='d-flex'>
+        <section id='search-container' class='m-2 col-3'>
+            <div id='search-bar' class="border-bottom">
                 <h2>Search for a City:</h2>
-                <input type="text">
-                <button>search</button>
+                <input type="text" class='col p-2 rounded' placeholder="Los Angeles">
+                <button class='btn-info rounded w-100 my-1'>search</button>
             </div>
             <div id='search-history'>
-                <ul>
+                <ul class="list-unstyled text-center">
                     <!-- will be dynamic -->
-                    <li>Austin</li>
-                    <li>Austin</li>
-                    <li>Austin</li>
-                    <li>Austin</li>
+                    <li class='bg-secondary rounded py-2 my-3'>Austin</li>
+                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
+                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
+                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
                 </ul>
             </div>
         </section>
-        <section id='weather-container'>
-            <div id='weather-city'>
+        <section id='weather-container' class='m-2 col'>
+            <div id='weather-city' class='border p-3'>
                 <h2>City (dd/mm/yyyy)</h2>
                 <p>temp</p>
                 <p>wind</p>
@@ -38,37 +38,39 @@
                 <p>UV</p>
             </div>
             <div id='weather-five'>
-                <h3>5-day Forecast</h3>
-                <section id='cards'>
-                    <div class="card">
+                <h3>5-day Forecast:</h3>
+                <section id='cards' class='d-flex justify-content-around'>
+                    <div class="card bg-dark text-light p-2 mx-2">
+                        <img class='card-img-top' src="..." alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">mm/dd//yyyy</h3>
+                            <p class="card-text">temp</p>
+                            <p class="card-text">wind</p>
+                            <p class="card-text">humidity</p>
+                        </div>                        
+                    </div>
+                    <div class="card bg-dark text-light p-2 mx-2">
                         <h3>mm/dd//yyyy</h3>
                         <img src="" alt="">
                         <p>temp</p>
                         <p>wind</p>
                         <p>humidity</p>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark text-light p-2 mx-2">
                         <h3>mm/dd//yyyy</h3>
                         <img src="" alt="">
                         <p>temp</p>
                         <p>wind</p>
                         <p>humidity</p>
                     </div>
-                    <div class="card">
+                    <div class="card bg-dark text-light p-2 mx-2">
                         <h3>mm/dd//yyyy</h3>
                         <img src="" alt="">
                         <p>temp</p>
                         <p>wind</p>
                         <p>humidity</p>
                     </div>
-                    <div class="card">
-                        <h3>mm/dd//yyyy</h3>
-                        <img src="" alt="">
-                        <p>temp</p>
-                        <p>wind</p>
-                        <p>humidity</p>
-                    </div>
-                    <div class="card">
+                    <div class="card bg-dark text-light p-2 mx-2">
                         <h3>mm/dd//yyyy</h3>
                         <img src="" alt="">
                         <p>temp</p>
