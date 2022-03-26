@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section id='search-container'>
+            <div id='search-bar'>
+                <h2>Search for a City:</h2>
+                <input type="text">
+                <button>search</button>
+            </div>
+            <div id='search-history'>
+                <ul>
+                    <!-- will be dynamic -->
+                    <li>Austin</li>
+                    <li>Austin</li>
+                    <li>Austin</li>
+                    <li>Austin</li>
+                </ul>
+            </div>
+        </section>
+        <section id='weather-container'>
+            <div id='weather-city'>
+                <h2>City (dd/mm/yyyy)</h2>
+                <p>temp</p>
+                <p>wind</p>
+                <p>humidity</p>
+                <p>UV</p>
+            </div>
+            <div id='weather-five'>
+                <h3>5-day Forecast</h3>
+                <section id='cards'>
+                    <div class="card">
+                        <h3>mm/dd//yyyy</h3>
+                        <img src="" alt="">
+                        <p>temp</p>
+                        <p>wind</p>
+                        <p>humidity</p>
+                    </div>
+                    <div class="card">
+                        <h3>mm/dd//yyyy</h3>
+                        <img src="" alt="">
+                        <p>temp</p>
+                        <p>wind</p>
+                        <p>humidity</p>
+                    </div>
+                    <div class="card">
+                        <h3>mm/dd//yyyy</h3>
+                        <img src="" alt="">
+                        <p>temp</p>
+                        <p>wind</p>
+                        <p>humidity</p>
+                    </div>
+                    <div class="card">
+                        <h3>mm/dd//yyyy</h3>
+                        <img src="" alt="">
+                        <p>temp</p>
+                        <p>wind</p>
+                        <p>humidity</p>
+                    </div>
+                    <div class="card">
+                        <h3>mm/dd//yyyy</h3>
+                        <img src="" alt="">
+                        <p>temp</p>
+                        <p>wind</p>
+                        <p>humidity</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script> -->
+    <script src="./assets/script.js"></script>
+</body>
+</html>
