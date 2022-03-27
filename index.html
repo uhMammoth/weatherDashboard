@@ -16,8 +16,10 @@
         <section id='search-container' class='m-2 col-3'>
             <div id='search-bar' class="border-bottom">
                 <h2>Search for a City:</h2>
-                <input type="text" class='col p-2 rounded' placeholder="Los Angeles">
-                <button class='btn-info rounded w-100 my-1'>search</button>
+                <form action="">
+                    <input id='city-selected' type="text" class='col p-2 rounded' placeholder="Los Angeles">
+                    <input id='city-submit' type="submit" class='btn-info rounded w-100 my-3 py-2' value="Submit">
+                </form>                
             </div>
             <div id='search-history'>
                 <ul class="list-unstyled text-center">
@@ -82,6 +84,7 @@
         </section>
     </main>
     <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
