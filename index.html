@@ -13,7 +13,10 @@
         <h1 class='text-center bg-dark text-light p-3'>Weather Dashboard</h1>
     </header>
     <main class='d-flex'>
-        <section id='search-container' class='m-2 col-3'>
+        
+        <!-- sidebar for search and history -->
+        <section class='col-3 bg-primary'>
+            <!-- search / user input -->
             <div id='search-bar' class="border-bottom">
                 <h2>Search for a City:</h2>
                 <form action="">
@@ -21,28 +24,28 @@
                     <input id='city-submit' type="submit" class='btn-info rounded w-100 my-3 py-2' value="Submit">
                 </form>                
             </div>
+            <!-- user search history of cities -->
             <div id='search-history'>
                 <ul class="list-unstyled text-center">
-                    <!-- will be dynamic -->
-                    <li class='bg-secondary rounded py-2 my-3'>Austin</li>
-                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
-                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
-                    <li class='bg-secondary rounded py-2 my-2'>Austin</li>
+                    
                 </ul>
             </div>
         </section>
-        <section id='weather-container' class='m-2 col'>
-            <div id='weather-city' class='border p-3'>
-                <h2>City (dd/mm/yyyy)</h2>
-                <p>temp</p>
-                <p>wind</p>
-                <p>humidity</p>
-                <p>UV</p>
+
+        <!-- container for the main weather dashboard -->
+        <section id='weather-container' class='col-9'>
+
+            <!-- city main information -->
+            <div id='weather-city' class='border border-dark p-3 w-100'>
+                <h2>Look up a city to find the weather forecast!</h2>
+                
             </div>
-            <div id='weather-five'>
+
+            <!-- 5 day forecast cards -->
+            <div id='weather-five' class="bg-danger">
                 <h3>5-day Forecast:</h3>
-                <section id='cards' class='d-flex justify-content-around'>
-                    <div class="card bg-dark text-light p-2 mx-2">
+                <section id='cards' class='d-flex justify-content-around '>
+                    <div class="card bg-dark text-light mx-2">
                         <img class='card-img-top' src="..." alt="">
                         <div class="card-body">
                             <h3 class="card-title">mm/dd//yyyy</h3>
@@ -51,33 +54,41 @@
                             <p class="card-text">humidity</p>
                         </div>                        
                     </div>
-                    <div class="card bg-dark text-light p-2 mx-2">
-                        <h3>mm/dd//yyyy</h3>
-                        <img src="" alt="">
-                        <p>temp</p>
-                        <p>wind</p>
-                        <p>humidity</p>
+                    <div class="card bg-dark text-light mx-2">
+                        <img class='card-img-top' src="..." alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">mm/dd//yyyy</h3>
+                            <p class="card-text">temp</p>
+                            <p class="card-text">wind</p>
+                            <p class="card-text">humidity</p>
+                        </div>                        
                     </div>
-                    <div class="card bg-dark text-light p-2 mx-2">
-                        <h3>mm/dd//yyyy</h3>
-                        <img src="" alt="">
-                        <p>temp</p>
-                        <p>wind</p>
-                        <p>humidity</p>
+                    <div class="card bg-dark text-light mx-2">
+                        <img class='card-img-top' src="..." alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">mm/dd//yyyy</h3>
+                            <p class="card-text">temp</p>
+                            <p class="card-text">wind</p>
+                            <p class="card-text">humidity</p>
+                        </div>                        
                     </div>
-                    <div class="card bg-dark text-light p-2 mx-2">
-                        <h3>mm/dd//yyyy</h3>
-                        <img src="" alt="">
-                        <p>temp</p>
-                        <p>wind</p>
-                        <p>humidity</p>
+                    <div class="card bg-dark text-light mx-2">
+                        <img class='card-img-top' src="..." alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">mm/dd//yyyy</h3>
+                            <p class="card-text">temp</p>
+                            <p class="card-text">wind</p>
+                            <p class="card-text">humidity</p>
+                        </div>                        
                     </div>
-                    <div class="card bg-dark text-light p-2 mx-2">
-                        <h3>mm/dd//yyyy</h3>
-                        <img src="" alt="">
-                        <p>temp</p>
-                        <p>wind</p>
-                        <p>humidity</p>
+                    <div class="card bg-dark text-light mx-2">
+                        <img class='card-img-top' src="..." alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">mm/dd//yyyy</h3>
+                            <p class="card-text">temp</p>
+                            <p class="card-text">wind</p>
+                            <p class="card-text">humidity</p>
+                        </div>                        
                     </div>
                 </section>
             </div>

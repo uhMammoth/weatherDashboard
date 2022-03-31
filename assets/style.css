@@ -1,0 +1,24 @@
+:root{
+    --gradient: linear-gradient(to right,rgb(201, 12, 201), rgb(0, 140, 255));
+    --temperature: linear-gradient(to right,rgb(166, 201, 12), rgb(255, 0, 0));
+}
+
+header h1{
+    background-image: var(--gradient);
+}
+
+.bg-green {
+    background-color: green;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-orange {
+    background-color: orange;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-violet{
+    background-color: violet;
+}
