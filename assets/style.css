@@ -22,3 +22,10 @@ header h1{
 .bg-violet{
     background-color: violet;
 }
+
+.card {
+    font-size: 1vw;
+}
+.card img{
+    background-color: bisque;
+}
