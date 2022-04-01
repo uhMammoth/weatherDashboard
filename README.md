@@ -1,5 +1,10 @@
 # weatherDashboard
-
+This project is made to understand API's. API used is OpenWeather: https://openweathermap.org/ 
+## Features
+- user can search a city by name and API will return weather as well as 5 day forecast
+- safety checks to stop funciton if city name doesnt exist
+- user searches are saved in local storage (10 max)
+- user can click a history item to search again without having to retype a city
 ## User Story
 ```
 AS A traveler
@@ -21,6 +26,6 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 ## Live page 
-
+https://uhmammoth.github.io/weatherDashboard/
 ## Mock-up
 ![example](./assets/images/06-server-side-apis-homework-demo.png)
