@@ -66,8 +66,6 @@ var checkHistory = function(input){
 
 //when a new city is searched this will be called. used to update history localstorage and call api using lat lon coords
 var coordCall = function(data, apiKey){  
-
-  console.log(data);
   //gives error if invalid city and stops function
   if (data.cod == 404) {
     $('#city-selected').val('City not found!');
@@ -78,8 +76,8 @@ var coordCall = function(data, apiKey){
   }
   var newHistory ={
     cityName: data.name,
-    lat: Math.trunc(data.coord.lat),
-    lon: Math.trunc(data.coord.lon)
+    lat: data.coord.lat,
+    lon: data.coord.lon
   };
   fetchHandler(newHistory, apiKey);  
 }
