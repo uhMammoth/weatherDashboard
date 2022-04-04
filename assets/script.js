@@ -66,6 +66,8 @@ var checkHistory = function(input){
 
 //when a new city is searched this will be called. used to update history localstorage and call api using lat lon coords
 var coordCall = function(data, apiKey){  
+
+  console.log(data);
   //gives error if invalid city and stops function
   if (data.cod == 404) {
     $('#city-selected').val('City not found!');
@@ -133,7 +135,8 @@ var dashboardEl = function(data, cityName){
   var temp = data.current.temp;
   var wind = data.current.wind_speed;
   var humidity = data.current.humidity;
-  var uv = data.current.uvi;
+  var uv = data.daily[0].uvi;
+  console.log(data);
   $('#weather-city')
     .empty()
     .append("<h2>"+ cityName +" "+ date +"</h2><p>Temp: "+ temp +"</p><p>Wind: "+ wind +" MPH</p><p>Humidity: "+ humidity +"</p><p>UV Index: <span class='rounded "+ uvIndex(uv) +" p-1'>"+ uv +"</span></p>");
